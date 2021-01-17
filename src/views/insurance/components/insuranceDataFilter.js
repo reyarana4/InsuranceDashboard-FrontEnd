@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import './../../../assets/insuranceData.css';
 import * as actions from './../../../actions/insuranceAction';
-//import {NotificationContainer} from 'react-notifications';
+import {NotificationContainer} from 'react-notifications';
 
 class InsuranceDataFilter extends Component{
 
@@ -40,7 +40,7 @@ class InsuranceDataFilter extends Component{
 	
 	sendFilter = () => {
 		if(this.state.customer_id != '' && this.state.insuranceId != ''){
-			//NotificationManager.warning('Please add only oner search criteria', '', 4000);
+			NotificationManager.warning('Please add only oner search criteria', '', 4000);
 		}
 		else if(this.state.customer_id != '') {
 			this.props.dispatch(actions.asyncGetInsuranceDataOnCustomerId(this.state.customer_id));
@@ -49,7 +49,7 @@ class InsuranceDataFilter extends Component{
 			this.props.dispatch(actions.asyncGetInsuranceDataOnPolicyId(this.state.policy_id));
 		}
 		else {
-			//NotificationManager.warning('Please add one search criteria','',4000);
+			NotificationManager.warning('Please add one search criteria','',4000);
 		}
 				
 	}

@@ -4,9 +4,7 @@ import * as actions from './../../../actions/insuranceAction';
 import InsuranceDataGridColumn from './insuranceDataGridColumn';
 import {connect} from 'react-redux';
 import Loadable from 'react-loadable';
-
-import InsuranceDataFilter from './insuranceDataFilter';
-//import Popup from 'react-popup';
+import InsuranceDataFilter from './insuranceDataFilter';/import Popup from 'react-popup';
 const {ColumnSelectorHelper, DataGrid} = Component
 
 const columns = new InsuranceDataGridColumn();

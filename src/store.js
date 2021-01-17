@@ -1,7 +1,7 @@
-import {createStore, combineReducers, applyMiddleware, compose} from "redux";
-import promiseMiddleware from  'redux-promise-middleware';
+import {createStore, applyMiddleware, compose} from "redux";
+import promiseMiddleware from 'redux-promise-middleware';
 import thunkMiddleware from 'redux-thunk';
-import reducers from "./reducers";
+import reducers from "./reducers/insuranceReducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

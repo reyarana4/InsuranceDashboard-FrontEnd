@@ -1,5 +1,5 @@
-//import moment from 'moment';
-//import Popup from 'react-popup';
+import moment from 'moment';
+import Popup from 'react-popup';
 
 class InsuranceDataGridColumn{
 
